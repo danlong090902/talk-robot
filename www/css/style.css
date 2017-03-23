@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+body{
+  font-family: Microsoft YaHei;
+
+}
+.home-img-width{
+    width:50px!important;
+    margin:-20px 0 0 0;
+
+}
+.list-parent{
+  border:none !important;
+  white-space:normal !important;
+  margin:0 0 0 0;
+  height:80px;
+
+}
+
+.text-normal{
+  white-space:normal !important;
+}
+.text-left{
+
+  text-indent:0px;
+}
+.home-font{
+  font-size: 16px !important;
+}
+.bg-img{
+  display: inline-block;
+}
+body img{
+  width:100%;
+}
+.home-float-left{
+  float:left;
+
+}
+.home-float-right{
+   float:right;
+ }

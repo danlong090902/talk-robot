@@ -1,0 +1,28 @@
+
+<ion-view view-title="图灵{{rbaction}}" >
+  <img src="img/bg.png" style="width:100%;height:100%;">
+
+  <ion-content class="padding bg-img" >
+    <br>
+    <ul class="list" ng-cloak>
+      <li class="list list-parent "  ng-repeat="str in contentArray track by $index">
+        <span>
+        <img ng-src="{{str.src}}" class="home-img-width bg-img"
+              ng-class="{true:'home-float-left',false:'home-float-right'}[str.classState==true?false:true]">
+        <p class="home-font " ng-class="{true:'home-float-left',false:'home-float-right'}[str.classState==true?false:true]">
+          {{str.input.input?str.input.input:str.input}}</p><br>
+        </span>
+
+      </li>
+
+    </ul>
+  </ion-content>
+  <ion-footer-bar  style="box-shadow: 2px 6px 17px 0 #333">
+
+      <label class="item item-input"  style="width:86%">
+        <input type="text" placeholder="请输入..." ng-model="content.input" >
+      </label>
+      <button class="button button-positive"
+      style="position: absolute;right:6px" ng-click="send()">发送</button>
+  </ion-footer-bar>
+</ion-view>
