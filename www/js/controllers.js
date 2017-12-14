@@ -10,7 +10,12 @@ angular.module('starter.controllers', [])
   //用户添加
   $scope.content='';
   console.log(window.top)
-
+//按回车键发送
+  document.onkeydown=function(e){
+    if(e.keyCode="13"){
+      $scope.send()
+    }
+  }
 
   $scope.send=function(){//对话函数
 
@@ -59,6 +64,10 @@ angular.module('starter.controllers', [])
             title: '内容填写不规范',
             okText: '确定'
           });
+          //关闭弹框
+          setTimeout(function(){
+            alertPopup.close();
+          },1000)
         }
 
 
